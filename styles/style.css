@@ -20,6 +20,11 @@
 
 /* Base */
 
+.body {
+  padding: 0;
+  margin: 0;
+}
+
 .page {
   position: relative;
   display: flex;
@@ -86,7 +91,7 @@
 
 .accent-link {
   text-shadow: 2px 2px 0 var(--accent-clr);
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 /* Header */
@@ -94,6 +99,7 @@
 .header {
   display: grid;
   align-items: center;
+  min-height: 100vh;
   grid-template-rows: auto max-content auto;
 }
 
@@ -256,12 +262,12 @@
 .main__section {
   display: flex;
   flex-direction: column;
-  gap: 50px;  
+  gap: 50px;
 }
 
 @media (min-width: 768px) {
   .main__section {
-    gap: 80px;  
+    gap: 80px;
   }
 }
 
@@ -462,4 +468,5 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
