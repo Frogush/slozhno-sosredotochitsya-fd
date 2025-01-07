@@ -20,11 +20,6 @@
 
 /* Base */
 
-.body {
-  padding: 0;
-  margin: 0;
-}
-
 .page {
   position: relative;
   display: flex;
@@ -99,7 +94,7 @@
 .header {
   display: grid;
   align-items: center;
-  min-height: 100vh;
+  block-size: 100vh;
   grid-template-rows: auto max-content auto;
 }
 
@@ -430,8 +425,8 @@
 @media (min-width: 768px) {
   .fourth__section-gallery {
     display: grid;
+    grid-template: none;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: none;
     grid-template-rows: repeat(3, fit-content);
     row-gap: 16px;
     column-gap: 20px;
@@ -468,5 +463,5 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  block-size: 100vh;
 }
