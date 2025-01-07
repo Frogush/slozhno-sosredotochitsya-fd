@@ -1,4 +1,19 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --main-text-color: #f1b2ce; /* Цвет основного текста */
+  --cover-img: url(../images/cover-image-dark.png); /* Изображение заднего фона */
+  --main-font: "IBM Plex mono"; /* Основной шрифт */
+  --accent-heading-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /*Размер шрифта на мобильных устройствах */
+  --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /* Размер шрифта на десктопах */
+  --header-decoration-icon-clr: #ff0070; /* Цвет иконки REC */
+  --decorative-angle-clr: #ff0070; /* Цвет декоративных уголков */
+  --button-color: #ff0070; /* Цвет кнопки */
+  --button-hover-clr: #ff007066; /* Цвет рамки у кнопки при наведении */
+  --button-focus-clr: #ff0070; /* Цвет рамки у кнопки при фокусе */
+  --button-active-clr: #ff0070; /* Цвет активной кнопки */
+  --accent-heading-clr: #db00ff; /* Цвет главного заголовка (focus/no focus) */
+  --accent-clr: #ff0070; /* Часто использующиеся цвет в тексте */
+  --accent-clr-with-background: #000028; /* Цвет текста при наличии заднего фона */
+  --heading-clr: #ff0070; /* Цвет заголовка над текстом */
+  --link-hover-clr: #f1b2ce; /* Цвет рамки у ссылки при наведении */
+  --link-focus-clr: #f1b2ce; /* Цвет рамки у ссылки при фокусе */
+}
