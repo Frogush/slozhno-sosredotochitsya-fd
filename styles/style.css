@@ -1,4 +1,5 @@
 :root {
+  --background-clr: #000028; /* Цвет странички всей */
   --main-text-color: #f1b2ce; /* Цвет основного текста */
   --cover-img: url(../images/cover-image-dark.png); /* Изображение заднего фона */
   --main-font: "IBM Plex mono"; /* Основной шрифт */
@@ -28,19 +29,20 @@
   margin: 0 auto;
   color: var(--main-text-color);
   background: var(--cover-img);
+  background-color: var(--background-clr);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
-  gap: 50px;
+  gap: 40px;
 }
 
 @media (min-width: 768px) {
   .page {
     padding: 20px;
-    gap: 80px;
+    gap: 60px;
   }
 }
 
@@ -92,22 +94,11 @@
 /* Header */
 
 .header {
+  position: relative;
   display: grid;
   align-items: center;
-  block-size: 97vh;
+  min-block-size: 100vh;
   grid-template-rows: auto max-content auto;
-}
-
-@media (min-width: 768px) {
-  .header {
-    min-height: 95vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header {
-    min-height: 94vh;
-  }
 }
 
 /* HEADER__DECORATION */
@@ -132,24 +123,11 @@
   content: "";
 }
 
-.decorated-zone {
+.decorated-zone-header {
   position: relative;
-  min-block-size: 97vh;
 }
 
-@media (min-width: 768px) {
-  .decorated-zone {
-    min-height: 95vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .decorated-zone {
-    min-height: 94vh;
-  }
-}
-
-.decorated-zone::before {
+.decorated-zone-header::before {
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
@@ -160,11 +138,11 @@
   content: "";
 }
 
-.decorated-zone::after {
+.decorated-zone-header::after {
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: 0;
+  inset-block-end: 20px;
   border-bottom: 1px solid var(--decorative-angle-clr);
   border-left: 1px solid var(--decorative-angle-clr);
   content: "";
@@ -475,17 +453,30 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  block-size: 97vh;
+  min-block-size: 100vh;
 }
 
-@media (min-width: 768px) {
-  .footer {
-    min-height: 95vh;
-  }
+.decorated-zone-footer {
+  position: relative;
 }
 
-@media (min-width: 1024px) {
-  .footer {
-    min-height: 94vh;
-  }
+.decorated-zone-footer::before {
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  inset-block-start: 20px;
+  inset-inline-end: 0;
+  border-top: 1px solid var(--decorative-angle-clr);
+  border-right: 1px solid var(--decorative-angle-clr);
+  content: "";
+}
+
+.decorated-zone-footer::after {
+  position: absolute;
+  block-size: 25px;
+  inline-size: 25px;
+  inset-block-end: 0;
+  border-bottom: 1px solid var(--decorative-angle-clr);
+  border-left: 1px solid var(--decorative-angle-clr);
+  content: "";
 }
