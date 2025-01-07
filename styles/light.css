@@ -1,6 +1,6 @@
 
 :root.theme-light {
-  --background-clr: #FFF1F7; /* Цвет странички всей */
+  --background-clr: #FFF1F7; /* Цвет всей странички */
   --main-text-color: #353430; /* Цвет основного текста */
   --cover-img: url(../images/cover-image-light.png); /* Изображение заднего фона */
   --header-decoration-icon-clr: transparent;
@@ -19,7 +19,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-clr: #FFF1F7; /* Цвет странички всей */
+    --background-clr: #FFF1F7; /* Цвет всей странички */
     --main-text-color: #353430; /* Цвет основного текста */
     --cover-img: url(../images/cover-image-light.png); /* Изображение заднего фона */
     --header-decoration-icon-clr: transparent;

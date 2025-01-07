@@ -1,5 +1,5 @@
 :root {
-  --background-clr: #000028; /* Цвет странички всей */
+  --background-clr: #000028; /* Цвет всей странички */
   --main-text-color: #f1b2ce; /* Цвет основного текста */
   --cover-img: url(../images/cover-image-dark.png); /* Изображение заднего фона */
   --main-font: "IBM Plex mono"; /* Основной шрифт */
@@ -204,18 +204,17 @@
 
 .header__title {
   align-self: flex-start;
-  margin: 15px 0 0 0;
 }
 
 @media (min-width: 768px) {
   .header__title {
-    margin: 15px 0 0 -20px;
+    margin: 0 0 0 -20px;
   }
 }
 
 @media (min-width: 1024px) {
   .header__title {
-    margin: 45px 0 0 -20px;
+    margin: 15px 0 0 -20px;
   }
 }
 

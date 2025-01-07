@@ -1,5 +1,5 @@
 :root {
-  --background-clr: #000028; /* Цвет странички всей */
+  --background-clr: #000028; /* Цвет всей странички */
   --main-text-color: #f1b2ce; /* Цвет основного текста */
   --cover-img: url(../images/cover-image-dark.png); /* Изображение заднего фона */
   --main-font: "IBM Plex mono"; /* Основной шрифт */
