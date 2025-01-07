@@ -96,7 +96,8 @@
   display: grid;
   align-items: center;
   margin: 10px 10px 0 10px;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   grid-template-rows: auto max-content auto;
 }
 
@@ -470,6 +471,7 @@
   justify-content: center;
   margin: 0 10px 10px 10px;
   min-block-size: 100vh;
+  min-block-size: 668px;
 }
 
 @media (min-width: 768px) {
