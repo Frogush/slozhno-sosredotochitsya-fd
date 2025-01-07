@@ -126,13 +126,13 @@
 
 @media (min-width: 768px) {
   .decorated-zone {
-    min-height: 114vh;
+    min-height: 95vh;
   }
 }
 
 @media (min-width: 1024px) {
   .decorated-zone {
-    min-height: 83vh;
+    min-height: 94vh;
   }
 }
 
