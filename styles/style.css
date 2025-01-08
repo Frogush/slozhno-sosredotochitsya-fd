@@ -133,7 +133,7 @@ header.decorated-zone::after {
 
 @media (min-width: 768px) {
   header.decorated-zone::after {
-    inset-block-end: 45px;
+    inset-block-end: 40px;
   }
 }
 
@@ -227,7 +227,7 @@ header.decorated-zone::after {
 
 @media (min-width: 768px) {
   .header__description {
-    margin-top: -50px;
+    margin-top: -55px;
     max-inline-size: 364px;
   }
 }
@@ -444,6 +444,6 @@ footer.decorated-zone::before {
 
 @media (min-width: 768px) {
   footer.decorated-zone::before {
-    inset-block-start: 45px;
+    inset-block-start: 40px;
   }
 }
