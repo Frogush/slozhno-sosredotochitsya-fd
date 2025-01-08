@@ -152,7 +152,7 @@ header.decorated-zone::after {
 
 @media (min-width: 768px) {
   .header__theme-menu-list {
-    margin-top: -30px;
+    margin-top: -35px;
   }
 }
 
@@ -227,7 +227,7 @@ header.decorated-zone::after {
 
 @media (min-width: 768px) {
   .header__description {
-    margin-top: -50px;
+    margin-top: -45px;
     max-inline-size: 364px;
   }
 }
@@ -428,6 +428,10 @@ header.decorated-zone::after {
   margin: 10px;
   block-size: 100vh;
   min-block-size: 668px;
+}
+
+.footer__text {
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
