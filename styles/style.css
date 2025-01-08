@@ -205,7 +205,7 @@ header.decorated-zone::after {
 
 @media (min-width: 768px) {
   .header__title {
-    margin: -25px 0 0 -20px;
+    margin: -15px 0 0 -20px;
   }
 }
 
