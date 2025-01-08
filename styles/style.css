@@ -80,7 +80,6 @@
   }
 }
 
-
 /* Header Decoration */
 
 .header__decoration-icon {
@@ -122,10 +121,14 @@
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: 0;
+  inset-block-end: 0px;
   border-bottom: 1px solid var(--decorative-angle-clr);
   border-left: 1px solid var(--decorative-angle-clr);
   content: "";
+}
+
+header.decorated-zone::after {
+  inset-block-end: 20px;
 }
 
 /* Header Menu */
@@ -411,6 +414,7 @@
 /* Footer */
 
 .footer {
+  position: relative;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -423,4 +427,11 @@
   .footer {
     margin: 20px;
   }
+  .footer__text {
+    margin-top: 20px;
+  }
+}
+
+footer.decorated-zone::before {
+  inset-block-start: 20px;
 }
