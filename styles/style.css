@@ -227,7 +227,7 @@ header.decorated-zone::after {
 
 @media (min-width: 768px) {
   .header__description {
-    margin-top: -45px;
+    margin-top: -40px;
     max-inline-size: 364px;
   }
 }
