@@ -1,24 +1,3 @@
-:root {
-  --background-clr: #000028; /* Цвет всей странички */
-  --main-text-color: #f1b2ce; /* Цвет основного текста */
-  --cover-img: url(../images/cover-image-dark.png); /* Изображение заднего фона */
-  --main-font: "IBM Plex mono"; /* Основной шрифт */
-  --accent-heading-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /*Размер шрифта на мобильных устройствах */
-  --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); /* Размер шрифта на десктопах */
-  --header-decoration-icon-clr: #ff0070; /* Цвет иконки REC */
-  --decorative-angle-clr: #ff0070; /* Цвет декоративных уголков */
-  --button-color: #ff0070; /* Цвет кнопки */
-  --button-hover-clr: #ff007066; /* Цвет рамки у кнопки при наведении */
-  --button-focus-clr: #ff0070; /* Цвет рамки у кнопки при фокусе */
-  --button-active-clr: #ff0070; /* Цвет активной кнопки */
-  --accent-heading-clr: #78038a; /* Цвет главного заголовка (focus/no focus) */
-  --accent-clr: #ff0070; /* Часто использующиеся цвет в тексте */
-  --accent-clr-with-background: #000028; /* Цвет текста при наличии заднего фона */
-  --heading-clr: #ff0070; /* Цвет заголовка над текстом */
-  --link-hover-clrа: #f1b2ce; /* Цвет рамки у ссылки при наведении */
-  --link-focus-clr: #f1b2ce; /* Цвет рамки у ссылки при фокусе */
-}
-
 /* Base */
 
 .page {
@@ -35,13 +14,7 @@
   background-size: cover;
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
-  gap: 30px;
-}
-
-@media (min-width: 768px) {
-  .page {
-    gap: 40px;
-  }
+  gap: 20px;
 }
 
 /* ACCENT'S */
@@ -95,7 +68,7 @@
   position: relative;
   display: grid;
   align-items: center;
-  margin: 10px 10px 0 10px;
+  margin: 10px;
   block-size: 100vh;
   min-block-size: 668px;
   grid-template-rows: auto max-content auto;
@@ -103,7 +76,7 @@
 
 @media (min-width: 768px) {
   .header {
-    margin: 20px 20px 0 20px;
+    margin: 20px;
   }
 }
 
@@ -130,11 +103,11 @@
   content: "";
 }
 
-.decorated-zone-header {
+.decorated-zone {
   position: relative;
 }
 
-.decorated-zone-header::before {
+.decorated-zone::before {
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
@@ -145,11 +118,11 @@
   content: "";
 }
 
-.decorated-zone-header::after {
+.decorated-zone::after {
   position: absolute;
   block-size: 25px;
   inline-size: 25px;
-  inset-block-end: 20px;
+  inset-block-end: 0;
   border-bottom: 1px solid var(--decorative-angle-clr);
   border-left: 1px solid var(--decorative-angle-clr);
   content: "";
@@ -272,6 +245,18 @@
   }
 }
 
+.section-description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-description-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 /* Link's Settings */
 
 .section-link:hover {
@@ -286,137 +271,97 @@
   outline: 1px solid var(--link-focus-clr);
 }
 
-/* First Section (Text) */
+/* Text Section (Text) */
 
-.first__section {
+.why__section {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 @media (min-width: 768px) {
-  .first__section {
+  .why__section {
     display: grid;
     grid-template-columns: 236px 1fr;
   }
 }
 
 @media (min-width: 1024px) {
-  .first__section {
+  .why__section {
     grid-template-columns: 314px 1fr;
   }
 }
 
-.first__section-description-list {
+/* What Section (Text) */
+
+.what__section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.first__section-description-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* Second Section (Text) */
-
-.second__section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.second__section-heading {
-  width: 100%;
 }
 
 @media (min-width: 768px) {
-  .second__section-heading {
+  .what__heading {
     width: 236px;
   }
 }
 
 @media (min-width: 1024px) {
-  .second__section-heading {
+  .what__heading {
     width: 315px;
   }
 }
 
-.second__section-description-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 @media (min-width: 1024px) {
-  .second__section-description-list {
+  .what__section-description-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 }
 
-.second__section-description-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+/* How Section (Text) */
 
-/* Third Section (Text) */
-
-.third__section {
+.how__section {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 @media (min-width: 768px) {
-  .third__section {
+  .how__section {
     display: grid;
     grid-template-columns: 236px 1fr;
   }
 }
 
 @media (min-width: 1024px) {
-  .third__section {
+  .how__section {
     grid-template-columns: 315px 1fr;
   }
 }
 
-.third__section-container {
+.how__section-container {
   display:flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.third__section-description-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+/* Gallery Section (Image) */
 
-.third__section-description-item {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* Foutrh Section (Gallery) */
-
-.fourth__section {
+.gallery__section {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 @media (min-width: 768px) {
-  .fourth__section {
+  .gallery__section {
     gap: 20px;
   }
 }
 
-.fourth__section-gallery {
+.gallery__section-list {
   display: grid;
   object-fit: cover;
   grid-template-rows: 0.11fr 0.26fr 0.18fr 0.25fr 0.18fr;
@@ -429,7 +374,7 @@
 }
 
 @media (min-width: 768px) {
-  .fourth__section-gallery {
+  .gallery__section-list {
     display: grid;
     grid-template: none;
     grid-template-columns: 1fr 1fr 1fr;
@@ -469,38 +414,13 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  margin: 0 10px 10px 10px;
+  margin: 10px;
   block-size: 100vh;
   min-block-size: 668px;
 }
 
 @media (min-width: 768px) {
   .footer {
-    margin: 0 20px 20px 20px;
+    margin: 20px;
   }
-}
-
-.decorated-zone-footer {
-  position: relative;
-}
-
-.decorated-zone-footer::before {
-  position: absolute;
-  block-size: 25px;
-  inline-size: 25px;
-  inset-block-start: 20px;
-  inset-inline-end: 0;
-  border-top: 1px solid var(--decorative-angle-clr);
-  border-right: 1px solid var(--decorative-angle-clr);
-  content: "";
-}
-
-.decorated-zone-footer::after {
-  position: absolute;
-  block-size: 25px;
-  inline-size: 25px;
-  inset-block-end: 0;
-  border-bottom: 1px solid var(--decorative-angle-clr);
-  border-left: 1px solid var(--decorative-angle-clr);
-  content: "";
 }
